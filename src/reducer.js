@@ -26,7 +26,7 @@ export default function reducer(state, action) {
             if (!action.payload) {
                 return state;
             }
-            if (state.todos.findIndex(t => t.text === action.payload)) {
+            if (state.todos.findIndex(t => t.text === action.payload) > -1) {
                 return state;
             }
             const newTodo = {
@@ -49,10 +49,10 @@ export default function reducer(state, action) {
             if (!action.payload) {
                 return state;
             }
-            if (state.todos.findIndex(t => t.text === action.payload)) {
+            if (state.todos.findIndex(t => t.text === action.payload) > -1) {
                 return state;
             }
-            
+
             const updatedTodo = {
                 ...state.currentTodo, text: action.payload
             };

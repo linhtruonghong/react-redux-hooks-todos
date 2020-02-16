@@ -11,9 +11,7 @@ export default function TodoForm() {
         if (currentTodo.text) {
             dispatch({type: "UPDATE_TODO", payload: todo})
         } else {
-            if (todo !== '') {
-                dispatch({type: "ADD_TODO", payload: todo});
-            }
+            dispatch({type: "ADD_TODO", payload: todo});
         }
         setTodo("");
 
