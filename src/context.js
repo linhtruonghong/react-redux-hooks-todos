@@ -9,9 +9,10 @@ const TodosContext = React.createContext({
             id: 2, text: "Eat Laundry", complete: false
         },
         {
-            id: 3, text: "Finish project", complete: false
+            id: 3, text: "Finish project", complete: true
         }
-    ]
+    ],
+    currentTodo: {}
 });
 
 export default TodosContext;

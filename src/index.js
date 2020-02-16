@@ -4,6 +4,7 @@ import TodosContext from "./context";
 import todosReducer from './reducer';
 
 import TodoList from "./components/TodoList";
+import TodoForm from "./components/TodoForm";
 
 import * as serviceWorker from './serviceWorker';
 
@@ -13,6 +14,7 @@ const App = () => {
 
     return (
         <TodosContext.Provider value={{state, dispatch}}>
+            <TodoForm/>
             <TodoList/>
         </TodosContext.Provider>
     )
